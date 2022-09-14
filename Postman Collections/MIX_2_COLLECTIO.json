@@ -1,0 +1,492 @@
+{
+	"info": {
+		"_postman_id": "d0d70dee-d4e7-4520-8c83-1fab30ee95cb",
+		"name": "MIX_PROJECTS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "JIRA-REPORTS",
+			"item": [
+				{
+					"name": "GET_WORKLOGS",
+					"_postman_id": "4efbb399-2cdd-4ad2-8fa6-afc8913abc17",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJraWQiOiJOR3JQTXdFcnhXakc5TkxDWWZMTDZzdHZoM1JYZzQxLTNDSHZLcjlhSkdBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULnJDeVpoNHlwQ3BtazFyTUp3SUxKMmZZeGZzSkpQWkd5alhqMzNFSWNQVzQiLCJpc3MiOiJodHRwczovL2Rldi01NzYwMzYzMi5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2NDk3NTk3NTAsImV4cCI6MTY0OTc2MzM1MCwiY2lkIjoiMG9hNGdjNzhsa3JwTEc3WTI1ZDciLCJ1aWQiOiIwMHU0Z2NrdXF6SDlVbWJYdzVkNyIsInNjcCI6WyJlbWFpbCIsIm9wZW5pZCJdLCJhdXRoX3RpbWUiOjE2NDk3NTk3NDYsInN1YiI6ImFuZHJvc292LmFuZHJpaUBnbWFpbC5jb20iLCJHcm91cHMiOlsiRXZlcnlvbmUiLCJqaXJhLXJlcG9ydHMtYWRtaW5zIl19.hh-za_UqdOvFB5WRtVffPmjjYDGlvi1bIQy14e7A0jkAhgDCSLAgb-aggY4Cw9XeLKLRoGkUWh5jSBwzNm2I4bpHSOPv6KKHCde_eLPCPo-RdHOOPtRN8h9UJTSkZxWfbXa7et-f4PLyhYyfICKi9E6D2Cee0-IH86ko_T7QZQ2a6xQwdu05UuBE0OqeIIbOLpc2pCwBO86mTrQYfUloV3AVPyaPlXUB-c4u-QQgEk-dWq3AoQz6sJ1YYVAXoNzqcX6dSaHezZkDaev6dWgoc4grAQ0tDIeN7UmhbIX2sr16ijTxzP6hddUtGgwxUhKl6yoOHblRpE-iMGmzPN4EcA"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://jf94a301f0-api-test.herokuapp.com/report/all?from=2021-06-01&to=2022-04-30",
+							"protocol": "https",
+							"host": [
+								"jf94a301f0-api-test",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"report",
+								"all"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "2021-06-01"
+								},
+								{
+									"key": "to",
+									"value": "2022-04-30"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET_SETTINGS",
+					"_postman_id": "54551d8c-43fe-48bb-b5bd-c9e00258707e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJraWQiOiJOR3JQTXdFcnhXakc5TkxDWWZMTDZzdHZoM1JYZzQxLTNDSHZLcjlhSkdBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmQ1enVqaWpqTlVwenlBUnpJYm8tLThqcVVyWFNzT3dueWtBNWMxOEFPOGsiLCJpc3MiOiJodHRwczovL2Rldi01NzYwMzYzMi5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2NDk3NTg2ODMsImV4cCI6MTY0OTc2MjI4MywiY2lkIjoiMG9hNGdjNzhsa3JwTEc3WTI1ZDciLCJ1aWQiOiIwMHU0Z2Nta3cxckhqUmN4NTVkNyIsInNjcCI6WyJlbWFpbCIsIm9wZW5pZCJdLCJhdXRoX3RpbWUiOjE2NDk3NTg2ODEsInN1YiI6ImFuZHJvc292YS5uYXN0YXNpaWFAZ21haWwuY29tIiwiR3JvdXBzIjpbIkV2ZXJ5b25lIiwiamlyYS1yZXBvcnRzLXVzZXJzIl19.CxBqRnaUG85hlukc6lLdtuOZ9tthaC2yaybj5NyCbSCO0g6JwNGRMbjuiccOJ7OYCgxHNDhv97Ql8voftG6xqwI4P68Oa_pVF1vkLAF6WxSn6B4BO84Gri1CpiyZ7r_mJsVL1-QOvAq6i-q-Cot9D5prjFjtmDD0QrnAhjfotQPysylDtrPwqsYuw1DqXcvqBbFzERGro5mO6XDPWQsUPzcVNJcneboN4ngtAvvc8XtKdoynWFC23gtOH5Y1yw40VzGIOlUpBYWiX8FBRbumFsJaCHWUE-rfg8rtIJH_ofbgyLmyLVaJT6XkpJ2lJoBob-RUOvwHEMIOqYIwCpJAdw"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "https://jf94a301f0-api-test.herokuapp.com/settings"
+					},
+					"response": []
+				},
+				{
+					"name": "https://jf94a301f0-api-test.herokuapp.com/settings",
+					"_postman_id": "ddac9d44-f30c-493c-9821-25bccf0c804f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJraWQiOiJOR3JQTXdFcnhXakc5TkxDWWZMTDZzdHZoM1JYZzQxLTNDSHZLcjlhSkdBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmQ1enVqaWpqTlVwenlBUnpJYm8tLThqcVVyWFNzT3dueWtBNWMxOEFPOGsiLCJpc3MiOiJodHRwczovL2Rldi01NzYwMzYzMi5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2NDk3NTg2ODMsImV4cCI6MTY0OTc2MjI4MywiY2lkIjoiMG9hNGdjNzhsa3JwTEc3WTI1ZDciLCJ1aWQiOiIwMHU0Z2Nta3cxckhqUmN4NTVkNyIsInNjcCI6WyJlbWFpbCIsIm9wZW5pZCJdLCJhdXRoX3RpbWUiOjE2NDk3NTg2ODEsInN1YiI6ImFuZHJvc292YS5uYXN0YXNpaWFAZ21haWwuY29tIiwiR3JvdXBzIjpbIkV2ZXJ5b25lIiwiamlyYS1yZXBvcnRzLXVzZXJzIl19.CxBqRnaUG85hlukc6lLdtuOZ9tthaC2yaybj5NyCbSCO0g6JwNGRMbjuiccOJ7OYCgxHNDhv97Ql8voftG6xqwI4P68Oa_pVF1vkLAF6WxSn6B4BO84Gri1CpiyZ7r_mJsVL1-QOvAq6i-q-Cot9D5prjFjtmDD0QrnAhjfotQPysylDtrPwqsYuw1DqXcvqBbFzERGro5mO6XDPWQsUPzcVNJcneboN4ngtAvvc8XtKdoynWFC23gtOH5Y1yw40VzGIOlUpBYWiX8FBRbumFsJaCHWUE-rfg8rtIJH_ofbgyLmyLVaJT6XkpJ2lJoBob-RUOvwHEMIOqYIwCpJAdw"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"62430ab58b456b72af577d9f\",\r\n    \"role\": \"jira-reports-users\",\r\n    \"maxPeriod\": 13\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://jf94a301f0-api-test.herokuapp.com/settings"
+					},
+					"response": []
+				},
+				{
+					"name": "GET-PROJECTS",
+					"_postman_id": "4c321667-655f-4e80-a560-0fb46a0159e9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJraWQiOiJOR3JQTXdFcnhXakc5TkxDWWZMTDZzdHZoM1JYZzQxLTNDSHZLcjlhSkdBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmQ1enVqaWpqTlVwenlBUnpJYm8tLThqcVVyWFNzT3dueWtBNWMxOEFPOGsiLCJpc3MiOiJodHRwczovL2Rldi01NzYwMzYzMi5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2NDk3NTg2ODMsImV4cCI6MTY0OTc2MjI4MywiY2lkIjoiMG9hNGdjNzhsa3JwTEc3WTI1ZDciLCJ1aWQiOiIwMHU0Z2Nta3cxckhqUmN4NTVkNyIsInNjcCI6WyJlbWFpbCIsIm9wZW5pZCJdLCJhdXRoX3RpbWUiOjE2NDk3NTg2ODEsInN1YiI6ImFuZHJvc292YS5uYXN0YXNpaWFAZ21haWwuY29tIiwiR3JvdXBzIjpbIkV2ZXJ5b25lIiwiamlyYS1yZXBvcnRzLXVzZXJzIl19.CxBqRnaUG85hlukc6lLdtuOZ9tthaC2yaybj5NyCbSCO0g6JwNGRMbjuiccOJ7OYCgxHNDhv97Ql8voftG6xqwI4P68Oa_pVF1vkLAF6WxSn6B4BO84Gri1CpiyZ7r_mJsVL1-QOvAq6i-q-Cot9D5prjFjtmDD0QrnAhjfotQPysylDtrPwqsYuw1DqXcvqBbFzERGro5mO6XDPWQsUPzcVNJcneboN4ngtAvvc8XtKdoynWFC23gtOH5Y1yw40VzGIOlUpBYWiX8FBRbumFsJaCHWUE-rfg8rtIJH_ofbgyLmyLVaJT6XkpJ2lJoBob-RUOvwHEMIOqYIwCpJAdw"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "https://jf94a301f0-api-test.herokuapp.com/project/all"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "45ae2642-8bec-446a-8f8b-b15f79bca9ab"
+		},
+		{
+			"name": "CV-WEB",
+			"item": [
+				{
+					"name": "image",
+					"item": [
+						{
+							"name": "upload-image",
+							"_postman_id": "6af43dba-9cb2-4dec-8ff0-3430f7785b92",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJraWQiOiJOR3JQTXdFcnhXakc5TkxDWWZMTDZzdHZoM1JYZzQxLTNDSHZLcjlhSkdBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlMxT3BQVkQ2TlRJY3FZVXlrQmQ2UXdwa1BlWlc1NVdzZVVuOUpzWm5kRnciLCJpc3MiOiJodHRwczovL2Rldi01NzYwMzYzMi5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2NDk5Mjk4ODUsImV4cCI6MTY0OTkzMzQ4NSwiY2lkIjoiMG9hNGdjNzhsa3JwTEc3WTI1ZDciLCJ1aWQiOiIwMHU0Z2NrdXF6SDlVbWJYdzVkNyIsInNjcCI6WyJlbWFpbCIsIm9wZW5pZCJdLCJhdXRoX3RpbWUiOjE2NDk5Mjk4ODMsInN1YiI6ImFuZHJvc292LmFuZHJpaUBnbWFpbC5jb20iLCJHcm91cHMiOlsiRXZlcnlvbmUiLCJqaXJhLXJlcG9ydHMtYWRtaW5zIl19.FD7aumUYzP2XO1UtanuaqPYG4N1eEBI3YaHVk8kC4Cz8nZsbHv0ScVWLjmYz2DLwGuphcpnkPe1CNeS1_1dtHUZ6Rvl9fh-PoAme8CDsOUOIy7FCf3LMSfnpQqExyKAODpbw2frFOHtjCz2dKBcY7t5JDibnQhf0wb3o51VnfSvANpROpXs0OenFaZRMJTJcjtJH7sGmWiWXg8MGxhe3yyV-WrgAfbn9e9yJ5dds1vKl9n5__T7kKGcTaYm_hdm_yudHNBoTTYOJp1xiiKQthVpsL1XxETksqAeuUKqmGUfBz4cw-moketGdlkctrTdCdWshKSRyFWQNxLavZ4mz6A"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/andro/Desktop/FITS/API/Api/Api object type/Bug/Import type/mix/Bug2/Bug2.png"
+										}
+									],
+									"options": {}
+								},
+								"url": "https://v9a97b8350-api-test.herokuapp.com/image"
+							},
+							"response": []
+						},
+						{
+							"name": "upload-images",
+							"_postman_id": "0c6ab67c-1e8c-469a-a01a-24633fa804a8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJraWQiOiJOR3JQTXdFcnhXakc5TkxDWWZMTDZzdHZoM1JYZzQxLTNDSHZLcjlhSkdBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlMxT3BQVkQ2TlRJY3FZVXlrQmQ2UXdwa1BlWlc1NVdzZVVuOUpzWm5kRnciLCJpc3MiOiJodHRwczovL2Rldi01NzYwMzYzMi5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2NDk5Mjk4ODUsImV4cCI6MTY0OTkzMzQ4NSwiY2lkIjoiMG9hNGdjNzhsa3JwTEc3WTI1ZDciLCJ1aWQiOiIwMHU0Z2NrdXF6SDlVbWJYdzVkNyIsInNjcCI6WyJlbWFpbCIsIm9wZW5pZCJdLCJhdXRoX3RpbWUiOjE2NDk5Mjk4ODMsInN1YiI6ImFuZHJvc292LmFuZHJpaUBnbWFpbC5jb20iLCJHcm91cHMiOlsiRXZlcnlvbmUiLCJqaXJhLXJlcG9ydHMtYWRtaW5zIl19.FD7aumUYzP2XO1UtanuaqPYG4N1eEBI3YaHVk8kC4Cz8nZsbHv0ScVWLjmYz2DLwGuphcpnkPe1CNeS1_1dtHUZ6Rvl9fh-PoAme8CDsOUOIy7FCf3LMSfnpQqExyKAODpbw2frFOHtjCz2dKBcY7t5JDibnQhf0wb3o51VnfSvANpROpXs0OenFaZRMJTJcjtJH7sGmWiWXg8MGxhe3yyV-WrgAfbn9e9yJ5dds1vKl9n5__T7kKGcTaYm_hdm_yudHNBoTTYOJp1xiiKQthVpsL1XxETksqAeuUKqmGUfBz4cw-moketGdlkctrTdCdWshKSRyFWQNxLavZ4mz6A"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "files",
+											"type": "file",
+											"src": [
+												"/C:/Users/andro/Desktop/FITS/API/Api/Api object type/Bug/Import type/mix/Bug3/Bug 3.png",
+												"/C:/Users/andro/Desktop/FITS/API/Api/Api object type/Bug/Import type/mix/Bug3/Bug4.png"
+											]
+										}
+									],
+									"options": {}
+								},
+								"url": "https://v9a97b8350-api-test.herokuapp.com/image/multiple"
+							},
+							"response": []
+						},
+						{
+							"name": "download",
+							"_postman_id": "5ed5fd2c-a624-41d6-8fcb-a0f25449ae32",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJraWQiOiJOR3JQTXdFcnhXakc5TkxDWWZMTDZzdHZoM1JYZzQxLTNDSHZLcjlhSkdBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlMxT3BQVkQ2TlRJY3FZVXlrQmQ2UXdwa1BlWlc1NVdzZVVuOUpzWm5kRnciLCJpc3MiOiJodHRwczovL2Rldi01NzYwMzYzMi5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2NDk5Mjk4ODUsImV4cCI6MTY0OTkzMzQ4NSwiY2lkIjoiMG9hNGdjNzhsa3JwTEc3WTI1ZDciLCJ1aWQiOiIwMHU0Z2NrdXF6SDlVbWJYdzVkNyIsInNjcCI6WyJlbWFpbCIsIm9wZW5pZCJdLCJhdXRoX3RpbWUiOjE2NDk5Mjk4ODMsInN1YiI6ImFuZHJvc292LmFuZHJpaUBnbWFpbC5jb20iLCJHcm91cHMiOlsiRXZlcnlvbmUiLCJqaXJhLXJlcG9ydHMtYWRtaW5zIl19.FD7aumUYzP2XO1UtanuaqPYG4N1eEBI3YaHVk8kC4Cz8nZsbHv0ScVWLjmYz2DLwGuphcpnkPe1CNeS1_1dtHUZ6Rvl9fh-PoAme8CDsOUOIy7FCf3LMSfnpQqExyKAODpbw2frFOHtjCz2dKBcY7t5JDibnQhf0wb3o51VnfSvANpROpXs0OenFaZRMJTJcjtJH7sGmWiWXg8MGxhe3yyV-WrgAfbn9e9yJ5dds1vKl9n5__T7kKGcTaYm_hdm_yudHNBoTTYOJp1xiiKQthVpsL1XxETksqAeuUKqmGUfBz4cw-moketGdlkctrTdCdWshKSRyFWQNxLavZ4mz6A"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": "https://v9a97b8350-api-test.herokuapp.com/image/6257eeb1ad569743fdcb2000"
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"_postman_id": "53849aa0-6916-4f45-89b1-4e6929784f74",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJraWQiOiJOR3JQTXdFcnhXakc5TkxDWWZMTDZzdHZoM1JYZzQxLTNDSHZLcjlhSkdBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlMxT3BQVkQ2TlRJY3FZVXlrQmQ2UXdwa1BlWlc1NVdzZVVuOUpzWm5kRnciLCJpc3MiOiJodHRwczovL2Rldi01NzYwMzYzMi5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2NDk5Mjk4ODUsImV4cCI6MTY0OTkzMzQ4NSwiY2lkIjoiMG9hNGdjNzhsa3JwTEc3WTI1ZDciLCJ1aWQiOiIwMHU0Z2NrdXF6SDlVbWJYdzVkNyIsInNjcCI6WyJlbWFpbCIsIm9wZW5pZCJdLCJhdXRoX3RpbWUiOjE2NDk5Mjk4ODMsInN1YiI6ImFuZHJvc292LmFuZHJpaUBnbWFpbC5jb20iLCJHcm91cHMiOlsiRXZlcnlvbmUiLCJqaXJhLXJlcG9ydHMtYWRtaW5zIl19.FD7aumUYzP2XO1UtanuaqPYG4N1eEBI3YaHVk8kC4Cz8nZsbHv0ScVWLjmYz2DLwGuphcpnkPe1CNeS1_1dtHUZ6Rvl9fh-PoAme8CDsOUOIy7FCf3LMSfnpQqExyKAODpbw2frFOHtjCz2dKBcY7t5JDibnQhf0wb3o51VnfSvANpROpXs0OenFaZRMJTJcjtJH7sGmWiWXg8MGxhe3yyV-WrgAfbn9e9yJ5dds1vKl9n5__T7kKGcTaYm_hdm_yudHNBoTTYOJp1xiiKQthVpsL1XxETksqAeuUKqmGUfBz4cw-moketGdlkctrTdCdWshKSRyFWQNxLavZ4mz6A"
+									}
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": "https://v9a97b8350-api-test.herokuapp.com/image/6257eeb1ad569743fdcb2000"
+							},
+							"response": []
+						}
+					],
+					"_postman_id": "dd0ed0aa-fd8a-44ab-a437-094f2348d0b9",
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "cv",
+					"item": [
+						{
+							"name": "save-all",
+							"_postman_id": "94c0e2d5-8e51-4c83-9db1-1782d93e5d64",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJraWQiOiJOR3JQTXdFcnhXakc5TkxDWWZMTDZzdHZoM1JYZzQxLTNDSHZLcjlhSkdBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlMxT3BQVkQ2TlRJY3FZVXlrQmQ2UXdwa1BlWlc1NVdzZVVuOUpzWm5kRnciLCJpc3MiOiJodHRwczovL2Rldi01NzYwMzYzMi5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2NDk5Mjk4ODUsImV4cCI6MTY0OTkzMzQ4NSwiY2lkIjoiMG9hNGdjNzhsa3JwTEc3WTI1ZDciLCJ1aWQiOiIwMHU0Z2NrdXF6SDlVbWJYdzVkNyIsInNjcCI6WyJlbWFpbCIsIm9wZW5pZCJdLCJhdXRoX3RpbWUiOjE2NDk5Mjk4ODMsInN1YiI6ImFuZHJvc292LmFuZHJpaUBnbWFpbC5jb20iLCJHcm91cHMiOlsiRXZlcnlvbmUiLCJqaXJhLXJlcG9ydHMtYWRtaW5zIl19.FD7aumUYzP2XO1UtanuaqPYG4N1eEBI3YaHVk8kC4Cz8nZsbHv0ScVWLjmYz2DLwGuphcpnkPe1CNeS1_1dtHUZ6Rvl9fh-PoAme8CDsOUOIy7FCf3LMSfnpQqExyKAODpbw2frFOHtjCz2dKBcY7t5JDibnQhf0wb3o51VnfSvANpROpXs0OenFaZRMJTJcjtJH7sGmWiWXg8MGxhe3yyV-WrgAfbn9e9yJ5dds1vKl9n5__T7kKGcTaYm_hdm_yudHNBoTTYOJp1xiiKQthVpsL1XxETksqAeuUKqmGUfBz4cw-moketGdlkctrTdCdWshKSRyFWQNxLavZ4mz6A"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n    {\r\n        \"header\": {\r\n            \"name\": \"closetag UG\",\r\n            \"title\": \"INNOVATIVE SOFTWARE SOLUTIONS11231\",\r\n            \"logo\": \"https://v9a97b8350-api-test.herokuapp.com/image/6256e3caad569743fdcb1ffd\",\r\n            \"list\": [\r\n                \"Beratung\",\r\n                \"Konzeption\",\r\n                \"Sftware Entwicklung\",\r\n                \"QA / Testing\"\r\n            ]\r\n        },\r\n        \"company\": {\r\n            \"email\": {\r\n                \"to\": \"mailto:contact@closetag.io\",\r\n                \"text\": \"contact@closetag.io\"\r\n            },\r\n            \"phone\": \"+49 9332 500398\",\r\n            \"link\": {\r\n                \"to\": \"https://www.closetag.io\",\r\n                \"text\": \"www.closetag.io\"\r\n            },\r\n            \"located\": \"Nürnberg, Germany\"\r\n        },\r\n        \"expertise\": [\r\n            \"Software Architecture\",\r\n            \"Leadership\",\r\n            \"Dynamics 365\",\r\n            \"C#\",\r\n            \"Java\",\r\n            \".NET\",\r\n            \"Microsoft Dynamics\",\r\n            \"Spring Framework\",\r\n            \"REST/SOAP\",\r\n            \"Azure\",\r\n            \"Heroku\",\r\n            \"Wordpress\",\r\n            \"PHP\",\r\n            \"Node.js/JS\",\r\n            \"Salesforce\",\r\n            \"SQL\"\r\n        ],\r\n        \"projects\": [\r\n            {\r\n                \"title\": \"ChatBot Platform\",\r\n                \"location\": \"Nürnberg, Germany\",\r\n                \"from\": \"11/2018\",\r\n                \"to\": \"now\",\r\n                \"project_descr\": [\r\n                    \"Stack: java(Spring), angular, MongoDB, cloud(heroku), AWS\",\r\n                    \"ChatBot cloud platform with training function\",\r\n                    \"Facebook, web site(widget) integrations\"\r\n                ]\r\n            },\r\n            {\r\n                \"title\": \"QR Code Platform1\",\r\n                \"location\": \"Nürnberg, Germany\",\r\n                \"from\": \"03/2018\",\r\n                \"to\": \"now\",\r\n                \"project_descr\": [\r\n                    \"Stack: java(Spring), angular, MongoDB, cloud(heroku), AWS\",\r\n                    \"QR codes solution to help our customers effectively manage printed QR marketing programs\"\r\n                ]\r\n            },\r\n            {\r\n                \"title\": \"Web site Development\",\r\n                \"location\": \"Erlangen, Germany\",\r\n                \"from\": \"03/2019\",\r\n                \"to\": \"05/2019\",\r\n                \"project_descr\": [\r\n                    \"Concept of the web site\",\r\n                    \"Web site design\",\r\n                    \"Programming using Wordpress\"\r\n                ]\r\n            }\r\n        ],\r\n        \"skills\": [\r\n            \"Contao CMS (Typolight)\",\r\n            \"Jira\",\r\n            \"Craft CMS\",\r\n            \"Heroku Hosting\",\r\n            \"Redis\",\r\n            \"AWS Hosting\",\r\n            \"RabbitMQ\",\r\n            \"Jenkins\",\r\n            \"MySQL\",\r\n            \"Git\",\r\n            \"Python\",\r\n            \"Sonar\",\r\n            \"Salesforce APEX\",\r\n            \"Bitbucket\",\r\n            \"Angular\",\r\n            \"Confluence\"\r\n        ],\r\n        \"links\": [\r\n            {\r\n                \"validFrom\": \"2022-04-06\",\r\n                \"validTo\": \"2022-04-09\",\r\n                \"active\": true\r\n            },\r\n            {\r\n                \"validFrom\": \"2022-04-06\",\r\n                \"validTo\": \"2022-04-17\",\r\n                \"active\": true\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"header\": {\r\n            \"name\": \"closetag UG\",\r\n            \"logo\": \"https://v9a97b8350-api-test.herokuapp.com/image/6256e3caad569743fdcb1ffd\",\r\n            \"title\": \"INNOVATIVE SOFTWARE SOLUTIONS11231\",\r\n            \"list\": [\r\n                \"Beratung\",\r\n                \"Konzeption\",\r\n                \"Sftware Entwicklung\",\r\n                \"QA / Testing\"\r\n            ]\r\n        },\r\n        \"company\": {\r\n            \"email\": {\r\n                \"to\": \"mailto:contact@closetag.io\",\r\n                \"text\": \"contact@closetag.io\"\r\n            },\r\n            \"phone\": \"+49 9332 500398\",\r\n            \"link\": {\r\n                \"to\": \"https://www.closetag.io\",\r\n                \"text\": \"www.closetag.io\"\r\n            },\r\n            \"located\": \"Nürnberg, Germany\"\r\n        },\r\n        \"expertise\": [\r\n            \"Software Architecture\",\r\n            \"Leadership\",\r\n            \"Dynamics 365\",\r\n            \"C#\",\r\n            \"Java\",\r\n            \".NET\",\r\n            \"Microsoft Dynamics\",\r\n            \"Spring Framework\",\r\n            \"REST/SOAP\",\r\n            \"Azure\",\r\n            \"Heroku\",\r\n            \"Wordpress\",\r\n            \"PHP\",\r\n            \"Node.js/JS\",\r\n            \"Salesforce\",\r\n            \"SQL\"\r\n        ],\r\n        \"projects\": [\r\n            {\r\n                \"title\": \"ChatBot Platform\",\r\n                \"location\": \"Nürnberg, Germany\",\r\n                \"from\": \"11/2018\",\r\n                \"to\": \"now\",\r\n                \"project_descr\": [\r\n                    \"Stack: java(Spring), angular, MongoDB, cloud(heroku), AWS\",\r\n                    \"ChatBot cloud platform with training function\",\r\n                    \"Facebook, web site(widget) integrations\"\r\n                ]\r\n            },\r\n            {\r\n                \"title\": \"QR Code Platform1\",\r\n                \"location\": \"Nürnberg, Germany\",\r\n                \"from\": \"03/2018\",\r\n                \"to\": \"now\",\r\n                \"project_descr\": [\r\n                    \"Stack: java(Spring), angular, MongoDB, cloud(heroku), AWS\",\r\n                    \"QR codes solution to help our customers effectively manage printed QR marketing programs\"\r\n                ]\r\n            },\r\n            {\r\n                \"title\": \"Web site Development\",\r\n                \"location\": \"Erlangen, Germany\",\r\n                \"from\": \"03/2019\",\r\n                \"to\": \"05/2019\",\r\n                \"project_descr\": [\r\n                    \"Concept of the web site\",\r\n                    \"Web site design\",\r\n                    \"Programming using Wordpress\"\r\n                ]\r\n            }\r\n        ],\r\n        \"skills\": [\r\n            \"Contao CMS (Typolight)\",\r\n            \"Jira\",\r\n            \"Craft CMS\",\r\n            \"Heroku Hosting\",\r\n            \"Redis\",\r\n            \"AWS Hosting\",\r\n            \"RabbitMQ\",\r\n            \"Jenkins\",\r\n            \"MySQL\",\r\n            \"Git\",\r\n            \"Python\",\r\n            \"Sonar\",\r\n            \"Salesforce APEX\",\r\n            \"Bitbucket\",\r\n            \"Angular\",\r\n            \"Confluence\"\r\n        ],\r\n        \"links\": [\r\n            {\r\n                \"validFrom\": \"2022-04-06\",\r\n                \"validTo\": \"2022-04-07\",\r\n                \"active\": true\r\n            },\r\n            {\r\n                \"validFrom\": \"2022-04-06\",\r\n                \"validTo\": \"2022-04-07\",\r\n                \"active\": true\r\n            }\r\n        ]\r\n    }\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://v9a97b8350-api-test.herokuapp.com/cv/saveAll"
+							},
+							"response": []
+						},
+						{
+							"name": "save",
+							"_postman_id": "e8ae7b79-afe0-41f8-bf18-9a76b45ee298",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJraWQiOiJOR3JQTXdFcnhXakc5TkxDWWZMTDZzdHZoM1JYZzQxLTNDSHZLcjlhSkdBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlMxT3BQVkQ2TlRJY3FZVXlrQmQ2UXdwa1BlWlc1NVdzZVVuOUpzWm5kRnciLCJpc3MiOiJodHRwczovL2Rldi01NzYwMzYzMi5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2NDk5Mjk4ODUsImV4cCI6MTY0OTkzMzQ4NSwiY2lkIjoiMG9hNGdjNzhsa3JwTEc3WTI1ZDciLCJ1aWQiOiIwMHU0Z2NrdXF6SDlVbWJYdzVkNyIsInNjcCI6WyJlbWFpbCIsIm9wZW5pZCJdLCJhdXRoX3RpbWUiOjE2NDk5Mjk4ODMsInN1YiI6ImFuZHJvc292LmFuZHJpaUBnbWFpbC5jb20iLCJHcm91cHMiOlsiRXZlcnlvbmUiLCJqaXJhLXJlcG9ydHMtYWRtaW5zIl19.FD7aumUYzP2XO1UtanuaqPYG4N1eEBI3YaHVk8kC4Cz8nZsbHv0ScVWLjmYz2DLwGuphcpnkPe1CNeS1_1dtHUZ6Rvl9fh-PoAme8CDsOUOIy7FCf3LMSfnpQqExyKAODpbw2frFOHtjCz2dKBcY7t5JDibnQhf0wb3o51VnfSvANpROpXs0OenFaZRMJTJcjtJH7sGmWiWXg8MGxhe3yyV-WrgAfbn9e9yJ5dds1vKl9n5__T7kKGcTaYm_hdm_yudHNBoTTYOJp1xiiKQthVpsL1XxETksqAeuUKqmGUfBz4cw-moketGdlkctrTdCdWshKSRyFWQNxLavZ4mz6A"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"header\": {\r\n            \"name\": \"closetag UG\",\r\n            \"logo\": \"https://v9a97b8350-api-test.herokuapp.com/image/6256e3caad569743fdcb1ffd\",\r\n            \"title\": \"INNOVATIVE SOFTWARE SOLUTIONS11231\",\r\n            \"list\": [\r\n                \"Beratung\",\r\n                \"Konzeption\",\r\n                \"Sftware Entwicklung\",\r\n                \"QA / Testing\"\r\n            ]\r\n        },\r\n        \"company\": {\r\n            \"email\": {\r\n                \"to\": \"mailto:contact@closetag.io\",\r\n                \"text\": \"contact@closetag.io\"\r\n            },\r\n            \"phone\": \"+49 9332 500398\",\r\n            \"link\": {\r\n                \"to\": \"https://www.closetag.io\",\r\n                \"text\": \"www.closetag.io\"\r\n            },\r\n            \"located\": \"Nürnberg, Germany\"\r\n        },\r\n        \"expertise\": [\r\n            \"Software Architecture\",\r\n            \"Leadership\",\r\n            \"Dynamics 365\",\r\n            \"C#\",\r\n            \"Java\",\r\n            \".NET\",\r\n            \"Microsoft Dynamics\",\r\n            \"Spring Framework\",\r\n            \"REST/SOAP\",\r\n            \"Azure\",\r\n            \"Heroku\",\r\n            \"Wordpress\",\r\n            \"PHP\",\r\n            \"Node.js/JS\",\r\n            \"Salesforce\",\r\n            \"SQL\"\r\n        ],\r\n        \"projects\": [\r\n            {\r\n                \"title\": \"ChatBot Platform\",\r\n                \"location\": \"Nürnberg, Germany\",\r\n                \"from\": \"11/2018\",\r\n                \"to\": \"now\",\r\n                \"project_descr\": [\r\n                    \"Stack: java(Spring), angular, MongoDB, cloud(heroku), AWS\",\r\n                    \"ChatBot cloud platform with training function\",\r\n                    \"Facebook, web site(widget) integrations\"\r\n                ]\r\n            },\r\n            {\r\n                \"title\": \"QR Code Platform1\",\r\n                \"location\": \"Nürnberg, Germany\",\r\n                \"from\": \"03/2018\",\r\n                \"to\": \"now\",\r\n                \"project_descr\": [\r\n                    \"Stack: java(Spring), angular, MongoDB, cloud(heroku), AWS\",\r\n                    \"QR codes solution to help our customers effectively manage printed QR marketing programs\"\r\n                ]\r\n            },\r\n            {\r\n                \"title\": \"Web site Development\",\r\n                \"location\": \"Erlangen, Germany\",\r\n                \"from\": \"03/2019\",\r\n                \"to\": \"05/2019\",\r\n                \"project_descr\": [\r\n                    \"Concept of the web site\",\r\n                    \"Web site design\",\r\n                    \"Programming using Wordpress\"\r\n                ]\r\n            }\r\n        ],\r\n        \"skills\": [\r\n            \"Contao CMS (Typolight)\",\r\n            \"Jira\",\r\n            \"Craft CMS\",\r\n            \"Heroku Hosting\",\r\n            \"Redis\",\r\n            \"AWS Hosting\",\r\n            \"RabbitMQ\",\r\n            \"Jenkins\",\r\n            \"MySQL\",\r\n            \"Git\",\r\n            \"Python\",\r\n            \"Sonar\",\r\n            \"Salesforce APEX\",\r\n            \"Bitbucket\",\r\n            \"Angular\",\r\n            \"Confluence\"\r\n        ],\r\n        \"links\": [\r\n            {\r\n                \"validFrom\": \"2022-04-06\",\r\n                \"validTo\": \"2022-04-17\",\r\n                \"active\": true\r\n            },\r\n            {\r\n                \"validFrom\": \"2022-04-06\",\r\n                \"validTo\": \"2022-04-07\",\r\n                \"active\": true\r\n            }\r\n        ]\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://v9a97b8350-api-test.herokuapp.com/cv/"
+							},
+							"response": []
+						},
+						{
+							"name": "get-cv-by-key",
+							"_postman_id": "dd0ffec9-2cba-49f7-ab1d-6621b04826f8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJraWQiOiJOR3JQTXdFcnhXakc5TkxDWWZMTDZzdHZoM1JYZzQxLTNDSHZLcjlhSkdBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlMxT3BQVkQ2TlRJY3FZVXlrQmQ2UXdwa1BlWlc1NVdzZVVuOUpzWm5kRnciLCJpc3MiOiJodHRwczovL2Rldi01NzYwMzYzMi5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2NDk5Mjk4ODUsImV4cCI6MTY0OTkzMzQ4NSwiY2lkIjoiMG9hNGdjNzhsa3JwTEc3WTI1ZDciLCJ1aWQiOiIwMHU0Z2NrdXF6SDlVbWJYdzVkNyIsInNjcCI6WyJlbWFpbCIsIm9wZW5pZCJdLCJhdXRoX3RpbWUiOjE2NDk5Mjk4ODMsInN1YiI6ImFuZHJvc292LmFuZHJpaUBnbWFpbC5jb20iLCJHcm91cHMiOlsiRXZlcnlvbmUiLCJqaXJhLXJlcG9ydHMtYWRtaW5zIl19.FD7aumUYzP2XO1UtanuaqPYG4N1eEBI3YaHVk8kC4Cz8nZsbHv0ScVWLjmYz2DLwGuphcpnkPe1CNeS1_1dtHUZ6Rvl9fh-PoAme8CDsOUOIy7FCf3LMSfnpQqExyKAODpbw2frFOHtjCz2dKBcY7t5JDibnQhf0wb3o51VnfSvANpROpXs0OenFaZRMJTJcjtJH7sGmWiWXg8MGxhe3yyV-WrgAfbn9e9yJ5dds1vKl9n5__T7kKGcTaYm_hdm_yudHNBoTTYOJp1xiiKQthVpsL1XxETksqAeuUKqmGUfBz4cw-moketGdlkctrTdCdWshKSRyFWQNxLavZ4mz6A"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": "https://v9a97b8350-api-test.herokuapp.com/cv/findByKey/10223a46-48d6-4d03-b845-8f121cc2410b"
+							},
+							"response": []
+						},
+						{
+							"name": "get-cv-by-id",
+							"_postman_id": "6fa1919d-142e-41e6-ac67-e8426e1f2775",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJraWQiOiJOR3JQTXdFcnhXakc5TkxDWWZMTDZzdHZoM1JYZzQxLTNDSHZLcjlhSkdBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlMxT3BQVkQ2TlRJY3FZVXlrQmQ2UXdwa1BlWlc1NVdzZVVuOUpzWm5kRnciLCJpc3MiOiJodHRwczovL2Rldi01NzYwMzYzMi5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2NDk5Mjk4ODUsImV4cCI6MTY0OTkzMzQ4NSwiY2lkIjoiMG9hNGdjNzhsa3JwTEc3WTI1ZDciLCJ1aWQiOiIwMHU0Z2NrdXF6SDlVbWJYdzVkNyIsInNjcCI6WyJlbWFpbCIsIm9wZW5pZCJdLCJhdXRoX3RpbWUiOjE2NDk5Mjk4ODMsInN1YiI6ImFuZHJvc292LmFuZHJpaUBnbWFpbC5jb20iLCJHcm91cHMiOlsiRXZlcnlvbmUiLCJqaXJhLXJlcG9ydHMtYWRtaW5zIl19.FD7aumUYzP2XO1UtanuaqPYG4N1eEBI3YaHVk8kC4Cz8nZsbHv0ScVWLjmYz2DLwGuphcpnkPe1CNeS1_1dtHUZ6Rvl9fh-PoAme8CDsOUOIy7FCf3LMSfnpQqExyKAODpbw2frFOHtjCz2dKBcY7t5JDibnQhf0wb3o51VnfSvANpROpXs0OenFaZRMJTJcjtJH7sGmWiWXg8MGxhe3yyV-WrgAfbn9e9yJ5dds1vKl9n5__T7kKGcTaYm_hdm_yudHNBoTTYOJp1xiiKQthVpsL1XxETksqAeuUKqmGUfBz4cw-moketGdlkctrTdCdWshKSRyFWQNxLavZ4mz6A"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": "https://v9a97b8350-api-test.herokuapp.com/cv/6257f08cad569743fdcb2005"
+							},
+							"response": []
+						},
+						{
+							"name": "delete-all",
+							"_postman_id": "74100e65-d617-42d0-9736-fb127bc78031",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJraWQiOiJOR3JQTXdFcnhXakc5TkxDWWZMTDZzdHZoM1JYZzQxLTNDSHZLcjlhSkdBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlMxT3BQVkQ2TlRJY3FZVXlrQmQ2UXdwa1BlWlc1NVdzZVVuOUpzWm5kRnciLCJpc3MiOiJodHRwczovL2Rldi01NzYwMzYzMi5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2NDk5Mjk4ODUsImV4cCI6MTY0OTkzMzQ4NSwiY2lkIjoiMG9hNGdjNzhsa3JwTEc3WTI1ZDciLCJ1aWQiOiIwMHU0Z2NrdXF6SDlVbWJYdzVkNyIsInNjcCI6WyJlbWFpbCIsIm9wZW5pZCJdLCJhdXRoX3RpbWUiOjE2NDk5Mjk4ODMsInN1YiI6ImFuZHJvc292LmFuZHJpaUBnbWFpbC5jb20iLCJHcm91cHMiOlsiRXZlcnlvbmUiLCJqaXJhLXJlcG9ydHMtYWRtaW5zIl19.FD7aumUYzP2XO1UtanuaqPYG4N1eEBI3YaHVk8kC4Cz8nZsbHv0ScVWLjmYz2DLwGuphcpnkPe1CNeS1_1dtHUZ6Rvl9fh-PoAme8CDsOUOIy7FCf3LMSfnpQqExyKAODpbw2frFOHtjCz2dKBcY7t5JDibnQhf0wb3o51VnfSvANpROpXs0OenFaZRMJTJcjtJH7sGmWiWXg8MGxhe3yyV-WrgAfbn9e9yJ5dds1vKl9n5__T7kKGcTaYm_hdm_yudHNBoTTYOJp1xiiKQthVpsL1XxETksqAeuUKqmGUfBz4cw-moketGdlkctrTdCdWshKSRyFWQNxLavZ4mz6A"
+									}
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": "https://v9a97b8350-api-test.herokuapp.com/cv/deleteAll"
+							},
+							"response": []
+						},
+						{
+							"name": "find-paged",
+							"_postman_id": "1ec9d41d-262c-4ecd-bf5c-ffc09fb837af",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJraWQiOiJOR3JQTXdFcnhXakc5TkxDWWZMTDZzdHZoM1JYZzQxLTNDSHZLcjlhSkdBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlMxT3BQVkQ2TlRJY3FZVXlrQmQ2UXdwa1BlWlc1NVdzZVVuOUpzWm5kRnciLCJpc3MiOiJodHRwczovL2Rldi01NzYwMzYzMi5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2NDk5Mjk4ODUsImV4cCI6MTY0OTkzMzQ4NSwiY2lkIjoiMG9hNGdjNzhsa3JwTEc3WTI1ZDciLCJ1aWQiOiIwMHU0Z2NrdXF6SDlVbWJYdzVkNyIsInNjcCI6WyJlbWFpbCIsIm9wZW5pZCJdLCJhdXRoX3RpbWUiOjE2NDk5Mjk4ODMsInN1YiI6ImFuZHJvc292LmFuZHJpaUBnbWFpbC5jb20iLCJHcm91cHMiOlsiRXZlcnlvbmUiLCJqaXJhLXJlcG9ydHMtYWRtaW5zIl19.FD7aumUYzP2XO1UtanuaqPYG4N1eEBI3YaHVk8kC4Cz8nZsbHv0ScVWLjmYz2DLwGuphcpnkPe1CNeS1_1dtHUZ6Rvl9fh-PoAme8CDsOUOIy7FCf3LMSfnpQqExyKAODpbw2frFOHtjCz2dKBcY7t5JDibnQhf0wb3o51VnfSvANpROpXs0OenFaZRMJTJcjtJH7sGmWiWXg8MGxhe3yyV-WrgAfbn9e9yJ5dds1vKl9n5__T7kKGcTaYm_hdm_yudHNBoTTYOJp1xiiKQthVpsL1XxETksqAeuUKqmGUfBz4cw-moketGdlkctrTdCdWshKSRyFWQNxLavZ4mz6A"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": "https://v9a97b8350-api-test.herokuapp.com/cv/findPaged/1/5"
+							},
+							"response": []
+						},
+						{
+							"name": "get-all-links-by-cv-key",
+							"_postman_id": "cb8ba38d-7144-4ddd-83fd-be861a2b3f5e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJraWQiOiJOR3JQTXdFcnhXakc5TkxDWWZMTDZzdHZoM1JYZzQxLTNDSHZLcjlhSkdBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlMxT3BQVkQ2TlRJY3FZVXlrQmQ2UXdwa1BlWlc1NVdzZVVuOUpzWm5kRnciLCJpc3MiOiJodHRwczovL2Rldi01NzYwMzYzMi5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2NDk5Mjk4ODUsImV4cCI6MTY0OTkzMzQ4NSwiY2lkIjoiMG9hNGdjNzhsa3JwTEc3WTI1ZDciLCJ1aWQiOiIwMHU0Z2NrdXF6SDlVbWJYdzVkNyIsInNjcCI6WyJlbWFpbCIsIm9wZW5pZCJdLCJhdXRoX3RpbWUiOjE2NDk5Mjk4ODMsInN1YiI6ImFuZHJvc292LmFuZHJpaUBnbWFpbC5jb20iLCJHcm91cHMiOlsiRXZlcnlvbmUiLCJqaXJhLXJlcG9ydHMtYWRtaW5zIl19.FD7aumUYzP2XO1UtanuaqPYG4N1eEBI3YaHVk8kC4Cz8nZsbHv0ScVWLjmYz2DLwGuphcpnkPe1CNeS1_1dtHUZ6Rvl9fh-PoAme8CDsOUOIy7FCf3LMSfnpQqExyKAODpbw2frFOHtjCz2dKBcY7t5JDibnQhf0wb3o51VnfSvANpROpXs0OenFaZRMJTJcjtJH7sGmWiWXg8MGxhe3yyV-WrgAfbn9e9yJ5dds1vKl9n5__T7kKGcTaYm_hdm_yudHNBoTTYOJp1xiiKQthVpsL1XxETksqAeuUKqmGUfBz4cw-moketGdlkctrTdCdWshKSRyFWQNxLavZ4mz6A"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": "https://v9a97b8350-api-test.herokuapp.com/cv/link/all/0594ba65-d5ff-49fe-a6e8-6452f88881c4"
+							},
+							"response": []
+						},
+						{
+							"name": "get-cv-by-link-key",
+							"_postman_id": "73f6d789-c18a-42b0-b713-a439dd9753b8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "https://v9a97b8350-api-test.herokuapp.com/cv/link/e5e6170d-fc28-4253-8d98-cc3cd27cdd28"
+							},
+							"response": []
+						},
+						{
+							"name": "add-link-to-cv-by-cv-key",
+							"_postman_id": "8c8fd4a4-6c64-48e0-9293-24b738e12b90",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJraWQiOiJOR3JQTXdFcnhXakc5TkxDWWZMTDZzdHZoM1JYZzQxLTNDSHZLcjlhSkdBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlMxT3BQVkQ2TlRJY3FZVXlrQmQ2UXdwa1BlWlc1NVdzZVVuOUpzWm5kRnciLCJpc3MiOiJodHRwczovL2Rldi01NzYwMzYzMi5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2NDk5Mjk4ODUsImV4cCI6MTY0OTkzMzQ4NSwiY2lkIjoiMG9hNGdjNzhsa3JwTEc3WTI1ZDciLCJ1aWQiOiIwMHU0Z2NrdXF6SDlVbWJYdzVkNyIsInNjcCI6WyJlbWFpbCIsIm9wZW5pZCJdLCJhdXRoX3RpbWUiOjE2NDk5Mjk4ODMsInN1YiI6ImFuZHJvc292LmFuZHJpaUBnbWFpbC5jb20iLCJHcm91cHMiOlsiRXZlcnlvbmUiLCJqaXJhLXJlcG9ydHMtYWRtaW5zIl19.FD7aumUYzP2XO1UtanuaqPYG4N1eEBI3YaHVk8kC4Cz8nZsbHv0ScVWLjmYz2DLwGuphcpnkPe1CNeS1_1dtHUZ6Rvl9fh-PoAme8CDsOUOIy7FCf3LMSfnpQqExyKAODpbw2frFOHtjCz2dKBcY7t5JDibnQhf0wb3o51VnfSvANpROpXs0OenFaZRMJTJcjtJH7sGmWiWXg8MGxhe3yyV-WrgAfbn9e9yJ5dds1vKl9n5__T7kKGcTaYm_hdm_yudHNBoTTYOJp1xiiKQthVpsL1XxETksqAeuUKqmGUfBz4cw-moketGdlkctrTdCdWshKSRyFWQNxLavZ4mz6A"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"validFrom\": \"2022-04-06T00:00:00.000+00:00\",\r\n    \"validTo\": \"2022-04-17T00:00:00.000+00:00\",\r\n    \"active\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://v9a97b8350-api-test.herokuapp.com/cv/link/0594ba65-d5ff-49fe-a6e8-6452f88881c4"
+							},
+							"response": []
+						},
+						{
+							"name": "remove-link-by-link-key",
+							"_postman_id": "bc453b8f-c6d0-4253-9386-06f87b72d18b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJraWQiOiJOR3JQTXdFcnhXakc5TkxDWWZMTDZzdHZoM1JYZzQxLTNDSHZLcjlhSkdBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlMxT3BQVkQ2TlRJY3FZVXlrQmQ2UXdwa1BlWlc1NVdzZVVuOUpzWm5kRnciLCJpc3MiOiJodHRwczovL2Rldi01NzYwMzYzMi5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2NDk5Mjk4ODUsImV4cCI6MTY0OTkzMzQ4NSwiY2lkIjoiMG9hNGdjNzhsa3JwTEc3WTI1ZDciLCJ1aWQiOiIwMHU0Z2NrdXF6SDlVbWJYdzVkNyIsInNjcCI6WyJlbWFpbCIsIm9wZW5pZCJdLCJhdXRoX3RpbWUiOjE2NDk5Mjk4ODMsInN1YiI6ImFuZHJvc292LmFuZHJpaUBnbWFpbC5jb20iLCJHcm91cHMiOlsiRXZlcnlvbmUiLCJqaXJhLXJlcG9ydHMtYWRtaW5zIl19.FD7aumUYzP2XO1UtanuaqPYG4N1eEBI3YaHVk8kC4Cz8nZsbHv0ScVWLjmYz2DLwGuphcpnkPe1CNeS1_1dtHUZ6Rvl9fh-PoAme8CDsOUOIy7FCf3LMSfnpQqExyKAODpbw2frFOHtjCz2dKBcY7t5JDibnQhf0wb3o51VnfSvANpROpXs0OenFaZRMJTJcjtJH7sGmWiWXg8MGxhe3yyV-WrgAfbn9e9yJ5dds1vKl9n5__T7kKGcTaYm_hdm_yudHNBoTTYOJp1xiiKQthVpsL1XxETksqAeuUKqmGUfBz4cw-moketGdlkctrTdCdWshKSRyFWQNxLavZ4mz6A"
+									}
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": "https://v9a97b8350-api-test.herokuapp.com/cv/link/92494711-5272-4262-85fb-3beb355a7a53"
+							},
+							"response": []
+						},
+						{
+							"name": "delete-all-links-by-cv-key",
+							"_postman_id": "b15f6309-bc89-4d15-8b55-8a7f51e0f06f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJraWQiOiJOR3JQTXdFcnhXakc5TkxDWWZMTDZzdHZoM1JYZzQxLTNDSHZLcjlhSkdBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlMxT3BQVkQ2TlRJY3FZVXlrQmQ2UXdwa1BlWlc1NVdzZVVuOUpzWm5kRnciLCJpc3MiOiJodHRwczovL2Rldi01NzYwMzYzMi5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2NDk5Mjk4ODUsImV4cCI6MTY0OTkzMzQ4NSwiY2lkIjoiMG9hNGdjNzhsa3JwTEc3WTI1ZDciLCJ1aWQiOiIwMHU0Z2NrdXF6SDlVbWJYdzVkNyIsInNjcCI6WyJlbWFpbCIsIm9wZW5pZCJdLCJhdXRoX3RpbWUiOjE2NDk5Mjk4ODMsInN1YiI6ImFuZHJvc292LmFuZHJpaUBnbWFpbC5jb20iLCJHcm91cHMiOlsiRXZlcnlvbmUiLCJqaXJhLXJlcG9ydHMtYWRtaW5zIl19.FD7aumUYzP2XO1UtanuaqPYG4N1eEBI3YaHVk8kC4Cz8nZsbHv0ScVWLjmYz2DLwGuphcpnkPe1CNeS1_1dtHUZ6Rvl9fh-PoAme8CDsOUOIy7FCf3LMSfnpQqExyKAODpbw2frFOHtjCz2dKBcY7t5JDibnQhf0wb3o51VnfSvANpROpXs0OenFaZRMJTJcjtJH7sGmWiWXg8MGxhe3yyV-WrgAfbn9e9yJ5dds1vKl9n5__T7kKGcTaYm_hdm_yudHNBoTTYOJp1xiiKQthVpsL1XxETksqAeuUKqmGUfBz4cw-moketGdlkctrTdCdWshKSRyFWQNxLavZ4mz6A"
+									}
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": "https://v9a97b8350-api-test.herokuapp.com/cv/link/all/0594ba65-d5ff-49fe-a6e8-6452f88881c4"
+							},
+							"response": []
+						},
+						{
+							"name": "deactivate-link-by-link-key",
+							"_postman_id": "b830dae5-e198-45bf-a1b7-7918f14d5b51",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJraWQiOiJOR3JQTXdFcnhXakc5TkxDWWZMTDZzdHZoM1JYZzQxLTNDSHZLcjlhSkdBIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlMxT3BQVkQ2TlRJY3FZVXlrQmQ2UXdwa1BlWlc1NVdzZVVuOUpzWm5kRnciLCJpc3MiOiJodHRwczovL2Rldi01NzYwMzYzMi5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2NDk5Mjk4ODUsImV4cCI6MTY0OTkzMzQ4NSwiY2lkIjoiMG9hNGdjNzhsa3JwTEc3WTI1ZDciLCJ1aWQiOiIwMHU0Z2NrdXF6SDlVbWJYdzVkNyIsInNjcCI6WyJlbWFpbCIsIm9wZW5pZCJdLCJhdXRoX3RpbWUiOjE2NDk5Mjk4ODMsInN1YiI6ImFuZHJvc292LmFuZHJpaUBnbWFpbC5jb20iLCJHcm91cHMiOlsiRXZlcnlvbmUiLCJqaXJhLXJlcG9ydHMtYWRtaW5zIl19.FD7aumUYzP2XO1UtanuaqPYG4N1eEBI3YaHVk8kC4Cz8nZsbHv0ScVWLjmYz2DLwGuphcpnkPe1CNeS1_1dtHUZ6Rvl9fh-PoAme8CDsOUOIy7FCf3LMSfnpQqExyKAODpbw2frFOHtjCz2dKBcY7t5JDibnQhf0wb3o51VnfSvANpROpXs0OenFaZRMJTJcjtJH7sGmWiWXg8MGxhe3yyV-WrgAfbn9e9yJ5dds1vKl9n5__T7kKGcTaYm_hdm_yudHNBoTTYOJp1xiiKQthVpsL1XxETksqAeuUKqmGUfBz4cw-moketGdlkctrTdCdWshKSRyFWQNxLavZ4mz6A"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"url": "https://v9a97b8350-api-test.herokuapp.com/cv/link/deactivate/8e077ee1-4ad0-4a36-8f81-18619d8eb202"
+							},
+							"response": []
+						}
+					],
+					"_postman_id": "57812439-1eb0-4283-b217-26dcbf35ac45",
+					"_postman_isSubFolder": true
+				}
+			],
+			"_postman_id": "64b52fe5-dc67-49ff-bf28-e06c178f4596"
+		}
+	]
+}
