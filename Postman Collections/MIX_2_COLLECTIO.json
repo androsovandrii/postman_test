@@ -24,7 +24,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://jf94a301f0-api-test.herokuapp.com/report/all?from=2021-06-01&to=2022-04-30",
+							"raw": "https://jf94a301f0-api-test.herokuapp.com/report/all?from=2021-06-02&to=2022-04-30",
 							"protocol": "https",
 							"host": [
 								"jf94a301f0-api-test",
@@ -38,7 +38,7 @@
 							"query": [
 								{
 									"key": "from",
-									"value": "2021-12-01"
+									"value": "2021-06-02"
 								},
 								{
 									"key": "to",
